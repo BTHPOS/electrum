@@ -29,7 +29,7 @@ from sys import maxsize
 
 from .equihash_params import EquihashParams
 
-GIT_REPO_URL = "https://github.com/BTCGPU/electrum"
+GIT_REPO_URL = "https://github.com/BTHPOS/electrum"
 GIT_ISSUE_URL = GIT_REPO_URL + "/issues"
 
 
@@ -69,7 +69,7 @@ class BithereumBase(object):
     LWMA_SOLVETIME_LIMITATION = True
 
     EQUIHASH_PARAMS = EquihashParams(n=200, k=9, personalization=b'ZcashPoW')
-    EQUIHASH_PARAMS_FORK = EquihashParams(n=144, k=5, personalization=b'BethdPow')
+    EQUIHASH_PARAMS_FORK = EquihashParams(n=144, k=5, personalization=b'BethdPoW')
 
     CHUNK_SIZE = 252
 
