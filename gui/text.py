@@ -12,7 +12,7 @@ _ = lambda x:x
 
 
 
-class ElectrumGui:
+class ElectrumBTHui:
 
     def __init__(self, config, daemon, plugins):
 
@@ -20,7 +20,7 @@ class ElectrumGui:
         self.network = daemon.network
         storage = WalletStorage(config.get_wallet_path())
         if not storage.file_exists():
-            print("Wallet not found. try 'electrumg create'")
+            print("Wallet not found. try 'electrumbth create'")
             exit()
         if storage.is_encrypted():
             password = getpass.getpass('Password:', stream=None)

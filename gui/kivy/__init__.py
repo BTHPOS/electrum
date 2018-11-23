@@ -43,10 +43,10 @@ from kivy.logger import Logger
 
 
 
-class ElectrumGui:
+class ElectrumBTHui:
 
     def __init__(self, config, daemon, plugins):
-        Logger.debug('ElectrumGUI: initialising')
+        Logger.debug('ElectrumBTHUI: initialising')
         self.daemon = daemon
         self.network = daemon.network
         self.config = config

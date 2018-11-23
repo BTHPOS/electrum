@@ -1,4 +1,4 @@
-name: electrumg
+name: electrumbth
 version: master
 summary: Bithereum thin client
 description: |
@@ -9,7 +9,7 @@ confinement: strict
 
 apps:
   electrum:
-    command: desktop-launch electrumg
+    command: desktop-launch electrumbth
     plugs: [network, network-bind, x11, unity7]
 
 parts:

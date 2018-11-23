@@ -13,7 +13,7 @@ else:
 PYTHON_VERSION = '3.5.4'
 PYHOME = 'c:/python' + PYTHON_VERSION
 
-home = 'C:\\electrumg\\'
+home = 'C:\\electrumbth\\'
 
 # see https://github.com/pyinstaller/pyinstaller/issues/2005
 hiddenimports = []
@@ -44,7 +44,7 @@ datas += collect_data_files('btchip')
 datas += collect_data_files('keepkeylib')
 
 # We don't put these files in to actually include them in the script but to make the Analysis method scan them for imports
-a = Analysis([home+'electrumg',
+a = Analysis([home+'electrumbth',
               home+'gui/qt/main_window.py',
               home+'gui/text.py',
               home+'lib/util.py',
@@ -86,11 +86,11 @@ exe_standalone = EXE(
     a.scripts,
     a.binaries,
     a.datas, 
-    name=os.path.join('build\\pyi.win32\\electrumg', cmdline_name + ".exe"),
+    name=os.path.join('build\\pyi.win32\\electrumbth', cmdline_name + ".exe"),
     debug=False,
     strip=None,
     upx=False,
-    icon=home+'icons/electrumg.ico',
+    icon=home+'icons/electrumbth.ico',
     console=False)
     # console=True makes an annoying black box pop up, but it does make Electrum output command line commands, with this turned off no output will be given but commands can still be used
 
@@ -99,11 +99,11 @@ exe_portable = EXE(
     a.scripts,
     a.binaries,
     a.datas + [ ('is_portable', 'README.md', 'DATA' ) ],
-    name=os.path.join('build\\pyi.win32\\electrumg', cmdline_name + "-portable.exe"),
+    name=os.path.join('build\\pyi.win32\\electrumbth', cmdline_name + "-portable.exe"),
     debug=False,
     strip=None,
     upx=False,
-    icon=home+'icons/electrumg.ico',
+    icon=home+'icons/electrumbth.ico',
     console=False)
 
 #####
@@ -113,11 +113,11 @@ exe_dependent = EXE(
     pyz,
     a.scripts,
     exclude_binaries=True,
-    name=os.path.join('build\\pyi.win32\\electrumg', cmdline_name),
+    name=os.path.join('build\\pyi.win32\\electrumbth', cmdline_name),
     debug=False,
     strip=None,
     upx=False,
-    icon=home+'icons/electrumg.ico',
+    icon=home+'icons/electrumbth.ico',
     console=False)
 
 coll = COLLECT(
@@ -128,6 +128,6 @@ coll = COLLECT(
     strip=None,
     upx=True,
     debug=False,
-    icon=home+'icons/electrumg.ico',
+    icon=home+'icons/electrumbth.ico',
     console=False,
-    name=os.path.join('dist', 'electrumg'))
+    name=os.path.join('dist', 'electrumbth'))

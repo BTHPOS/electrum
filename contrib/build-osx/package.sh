@@ -9,7 +9,7 @@ genisoimage=genisoimage-$cdrkit_version
 
 libdmg_url=https://github.com/theuni/libdmg-hfsplus
 
-tmp_path=/tmp/electrumg-macos
+tmp_path=/tmp/electrumbth-macos
 
 export LD_PRELOAD=$(locate libfaketime.so.1)
 export FAKETIME="2000-01-22 00:00:00"
@@ -18,7 +18,7 @@ export PATH=$PATH:~/bin
 . $(dirname "$0")/base.sh
 
 if [ -z "$1" ]; then
-    echo "Usage: $0 ElectrumG.app"
+    echo "Usage: $0 ElectrumBTH.app"
     exit -127
 fi
 
@@ -74,16 +74,16 @@ ${genisoimage} \
     -D \
     -l \
     -probe \
-    -V "ElectrumG" \
+    -V "ElectrumBTH" \
     -no-pad \
     -r \
     -dir-mode 0755 \
     -apple \
-    -o ElectrumG_uncompressed.dmg \
+    -o ElectrumBTH_uncompressed.dmg \
     ${tmp_path}/image || fail "Unable to create uncompressed dmg"
 
-dmg dmg ElectrumG_uncompressed.dmg electrumg-$VERSION.dmg || fail "Unable to create compressed dmg"
-rm ElectrumG_uncompressed.dmg
+dmg dmg ElectrumBTH_uncompressed.dmg electrumbth-$VERSION.dmg || fail "Unable to create compressed dmg"
+rm ElectrumBTH_uncompressed.dmg
 
 echo "Done."
-md5sum electrumg-$VERSION.dmg
+md5sum electrumbth-$VERSION.dmg

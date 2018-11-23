@@ -17,7 +17,7 @@ Builder.load_string('''
 
 <SettingsDialog@Popup>
     id: settings
-    title: _('ElectrumG Settings')
+    title: _('ElectrumBTH Settings')
     disable_pin: False
     use_encryption: False
     BoxLayout:

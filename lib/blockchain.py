@@ -421,7 +421,7 @@ class Blockchain(util.PrintError):
             if len(h) < header_size:
                 raise Exception('Expected to read a full header. This was only {} bytes'.format(len(h)))
         elif not os.path.exists(util.get_headers_dir(self.config)):
-            raise Exception('ElectrumG datadir does not exist. Was it deleted while running?')
+            raise Exception('ElectrumBTH datadir does not exist. Was it deleted while running?')
         else:
             raise Exception('Cannot find headers file but datadir is there. Should be at {}'.format(name))
         if h == bytes([0])*header_size:

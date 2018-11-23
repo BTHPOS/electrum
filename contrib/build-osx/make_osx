@@ -2,8 +2,8 @@
 
 # Parameterize
 PYTHON_VERSION=3.6.4
-BUILDDIR=/tmp/electrumg-build
-PACKAGE=ElectrumG
+BUILDDIR=/tmp/electrumbth-build
+PACKAGE=ElectrumBTH
 GIT_REPO=https://github.com/BTHPOS/electrum
 
 . $(dirname "$0")/base.sh
@@ -79,4 +79,4 @@ info "pyinstaller --noconfirm --ascii --clean --name $VERSION contrib/build-osx/
 pyinstaller --noconfirm --ascii --clean --name $VERSION contrib/build-osx/osx.spec || fail "Could not build binary"
 
 info "Creating .DMG"
-hdiutil create -fs HFS+ -volname $PACKAGE -srcfolder dist/$PACKAGE.app dist/electrumg-$VERSION.dmg || fail "Could not create .DMG"
+hdiutil create -fs HFS+ -volname $PACKAGE -srcfolder dist/$PACKAGE.app dist/electrumbth-$VERSION.dmg || fail "Could not create .DMG"

@@ -1,12 +1,12 @@
-# If you want ElectrumG to appear in a Linux app launcher ("start menu"), install this by doing:
-# sudo desktop-file-install electrumg.desktop
+# If you want ElectrumBTH to appear in a Linux app launcher ("start menu"), install this by doing:
+# sudo desktop-file-install electrumbth.desktop
 
 [Desktop Entry]
 Comment=Lightweight Bithereum Client
-Exec=sh -c "PATH=\"\\$HOME/.local/bin:\\$PATH\" electrumg %u'
+Exec=sh -c "PATH=\"\\$HOME/.local/bin:\\$PATH\" electrumbth %u'
 GenericName[en_US]=Bithereum Wallet
 GenericName=Bithereum Wallet
-Icon=electrumg
+Icon=electrumbth
 Name[en_US]=Electrum Bithereum Wallet
 Name=Electrum Bithereum Wallet
 Categories=Finance;Network;
@@ -17,5 +17,5 @@ MimeType=x-scheme-handler/bithereumnetwork;
 Actions=Testnet;
 
 [Desktop Action Testnet]
-Exec=sh -c "PATH=\"\\$HOME/.local/bin:\\$PATH\" electrumg --testnet %u'
+Exec=sh -c "PATH=\"\\$HOME/.local/bin:\\$PATH\" electrumbth --testnet %u'
 Name=Testnet mode

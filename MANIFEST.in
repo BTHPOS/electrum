@@ -1,9 +1,9 @@
 include LICENCE RELEASE-NOTES AUTHORS
 include README.rst
-include electrumg.conf.sample
-include electrumg.desktop
+include electrumbth.conf.sample
+include electrumbth.desktop
 include *.py
-include electrumg
+include electrumbth
 include contrib/requirements/requirements.txt
 include contrib/requirements/requirements-hw.txt
 recursive-include lib *.py

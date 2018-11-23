@@ -9,14 +9,14 @@ import getpass, datetime
 # minimal fdisk like gui for console usage
 # written by rofl0r, with some bits stolen from the text gui (ncurses)
 
-class ElectrumGui:
+class ElectrumBTHui:
 
     def __init__(self, config, daemon, plugins):
         self.config = config
         self.network = daemon.network
         storage = WalletStorage(config.get_wallet_path())
         if not storage.file_exists:
-            print("Wallet not found. try 'electrumg create'")
+            print("Wallet not found. try 'electrumbth create'")
             exit()
         if storage.is_encrypted():
             password = getpass.getpass('Password:', stream=None)
@@ -208,12 +208,12 @@ class ElectrumGui:
             print(_('Error'))
 
     def network_dialog(self):
-        print("use 'electrumg setconfig server/proxy' to change your network settings")
+        print("use 'electrumbth setconfig server/proxy' to change your network settings")
         return True
 
 
     def settings_dialog(self):
-        print("use 'electrumg setconfig' to change your settings")
+        print("use 'electrumbth setconfig' to change your settings")
         return True
 
     def password_dialog(self):

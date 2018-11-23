@@ -18,7 +18,7 @@ with open('contrib/requirements/requirements-hw.txt') as f:
 version = imp.load_source('version', 'lib/version.py')
 
 if sys.version_info[:3] < (3, 4, 0):
-    sys.exit("Error: ElectrumG requires Python version >= 3.4.0...")
+    sys.exit("Error: ElectrumBTH requires Python version >= 3.4.0...")
 
 data_files = []
 
@@ -36,12 +36,12 @@ if platform.system() in ['Linux', 'FreeBSD', 'DragonFly']:
         else:
             usr_share = os.path.expanduser('~/.local/share')
     data_files += [
-        (os.path.join(usr_share, 'applications/'), ['electrumg.desktop']),
-        (os.path.join(usr_share, icons_dirname), ['icons/electrumg.png'])
+        (os.path.join(usr_share, 'applications/'), ['electrumbth.desktop']),
+        (os.path.join(usr_share, icons_dirname), ['icons/electrumbth.png'])
     ]
 
 setup(
-    name="ElectrumG",
+    name="ElectrumBTH",
     version=version.ELECTRUM_VERSION,
     install_requires=requirements,
     extras_require={
@@ -76,7 +76,7 @@ setup(
             'locale/*/LC_MESSAGES/electrum.mo',
         ]
     },
-    scripts=['electrumg'],
+    scripts=['electrumbth'],
     data_files=data_files,
     description="Lightweight Bithereum Wallet",
     author="The Bithereum Developers",
