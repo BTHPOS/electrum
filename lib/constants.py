@@ -179,7 +179,7 @@ class BithereumRegtest(BithereumBase):
 
     EQUIHASH_FORK_HEIGHT = -1
     EQUIHASH_PARAMS = EquihashParams(n=48, k=5, personalization=b'ZcashPoW')
-    EQUIHASH_PARAMS_FORK = EquihashParams(n=96, k=5, personalization=b'BethdPow')
+    EQUIHASH_PARAMS_FORK = EquihashParams(n=96, k=5, personalization=b'BethdPoW')
 
     POW_LIMIT = 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     POW_LIMIT_START = 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
