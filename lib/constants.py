@@ -128,7 +128,7 @@ class BithereumTestnet(BithereumBase):
     DEFAULT_SERVERS = read_json('servers_testnet.json', {})
 
     PREMINE_SIZE = 1000
-    BTH_HEIGHT = 2
+    BTH_HEIGHT = 1
 
     LWMA_HEIGHT = -1
     LWMA_ADJUST_WEIGHT_LEGACY = 13632
@@ -137,7 +137,7 @@ class BithereumTestnet(BithereumBase):
     LWMA_MIN_DENOMINATOR = 10
     LWMA_SOLVETIME_LIMITATION = False
 
-    EQUIHASH_FORK_HEIGHT = 14300
+    EQUIHASH_FORK_HEIGHT = 1
 
     POW_LIMIT = 0x0007ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     POW_LIMIT_START = 0x0007ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
