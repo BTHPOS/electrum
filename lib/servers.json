@@ -1,5 +1,5 @@
 {
-    "electrum-us.bithereum.network": {
+    "node1-electrumx.bithereum.network": {
         "pruning": "-",
         "s": "50002",
         "version": "1.2"
