@@ -26,7 +26,7 @@ for repo in electrum electrum-locale electrum-icons; do
 	git checkout master
 	cd ..
     else
-	URL=https://github.com/BTCGPU/$repo.git
+	URL=https://github.com/BTHPOS/$repo.git
 	git clone -b master $URL $repo
     fi
 done
