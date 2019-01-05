@@ -90,7 +90,7 @@ def hex_to_int(s):
 ################################## transactions
 
 SIGHASH_ALL    = 1
-SIGHASH_FORKID = 0x40
+SIGHASH_FORKID = 0x10
 
 COINBASE_MATURITY = 100
 COIN = 100000000
