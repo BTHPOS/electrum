@@ -773,7 +773,7 @@ class Transaction:
 
     @classmethod
     def get_forkid(cls):
-        return 79
+        return 85
 
     @classmethod
     def get_hash_type(cls):
