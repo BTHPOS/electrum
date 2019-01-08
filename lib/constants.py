@@ -86,10 +86,10 @@ class BithereumMainnet(BithereumBase):
     DEFAULT_SERVERS = read_json('servers.json', {})
     CHECKPOINTS = read_json('checkpoints.json', [])
 
-    PREMINE_SIZE = 10000
+    PREMINE_SIZE = 20000
     BTH_HEIGHT = 555555
 
-    LWMA_HEIGHT = 1
+    LWMA_HEIGHT = 555555
 
     EQUIHASH_FORK_HEIGHT = 555555
 
