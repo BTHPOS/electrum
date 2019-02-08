@@ -25,6 +25,7 @@ Available ElectrumX Servers
 ============================
 
 electrumx.bithereum.network
+
 node1-electrumx.bithereum.network
 
 Getting started
